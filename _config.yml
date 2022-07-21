@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: My Website
+title: My Blog
 
 # Your name to show in the footer
-author: Some Person
+author: Max Ph
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -49,22 +49,19 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
+  email: "maxph22112000@gmail.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
+  facebook: "https://www.facebook.com/profile.php?id=100010363235671"
+  github: "https://github.com/manhph2211" 
 #  medium: yourname
 #  reddit: yourname
-#  linkedin: daattali
+  linkedin: "https://www.linkedin.com/in/manhph2211/"
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
 #  instagram: deanat78
 #  spotify: yourname
-#  telephone: +14159998888
+  telephone: +84981633700
 #  steam: deanat78
 #  twitch: yourname
 #  yelp: yourname
@@ -79,7 +76,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
+rss-description: This website shares my knowledge ... 
 
 ###########################
 # --- General options --- #
