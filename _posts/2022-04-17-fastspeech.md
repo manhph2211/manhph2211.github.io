@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Paper Review: FastSpeech
-subtitle: Bài 2
-gh-repo: manhph2211/manhph2211.github.io
-gh-badge: [star, fork, follow]
-tags: [TTS, Speech Synthesis]
-comments: true
+title: Paper Review - FastSpeech
+subtitle: 
+cover-img: /assets/img/path.jpg
+thumbnail-img: /assets/img/thumb.png
+share-img: /assets/img/path.jpg
+tags: [Speech Synthesis, TTS]
 ---
 
 # Tổng quan
