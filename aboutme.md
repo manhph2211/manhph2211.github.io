@@ -6,10 +6,10 @@ subtitle: Be strong, be yourself!
 
 My name is Manh Pham. A senior student at Hanoi University of Science and Technology with a strong interest in Artificial Intelligent and IoT. I am an ambitious, hard-working, and aggressive learner who believes the core value of any business is to improve people's lives.
 
-👋 I'm always eager to learn new things day by day
-👯 I'm really interested in applying AI as well as IoT to address real world problems
-🔭 I’m looking for 2022 job opportunities in Machine Learning Engineer 🙋
-⚡ Fun fact: I'm really into soccer and my favorite team is MU, still 🙂
+- 👋 I'm always eager to learn new things day by day
+- 👯 I'm really interested in applying AI as well as IoT to address real world problems
+- 🔭 I’m looking for 2022 job opportunities in Machine Learning Engineer 🙋
+- ⚡ Fun fact: I'm really into soccer and my favorite team is MU, still 🙂
 
 
 I am happy to connect with recruiters, friends, community program leads, and anyone who shares some of my interests!
