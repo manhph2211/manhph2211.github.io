@@ -10,13 +10,13 @@ tags: [Speech Synthesis, TTS]
 
 # Tổng quan
 
-Bây giờ em sẽ viết tiếp đến FastSpeech 2. Đến bài này, tác giả chỉ ra FastSpeech đúng là đã có thể tổng hợp âm thanh nhanh hơn nhiều nhưng vẫn có độ chính xác cạnh tranh với các mô hình autoregressive lúc đó. Tuy nhiên, FastSpeech lại có thể gặp một số vấn đề:
+Bây giờ mình sẽ viết tiếp đến FastSpeech 2. Đến bài này, tác giả chỉ ra FastSpeech đúng là đã có thể tổng hợp âm thanh nhanh hơn nhiều nhưng vẫn có độ chính xác cạnh tranh với các mô hình autoregressive lúc đó. Tuy nhiên, FastSpeech lại có thể gặp một số vấn đề:
 - Sử dụng teacher-student distillation pipeline khá phức tạp và tốn thời gian
 - Sử dụng duration extracted từ teacher model có thể chưa đủ chính xác, và target mel-spectrograms sai distilled từ teacher model có thể dẫn đến information loss
 
 Nhắc lại về TTS là một bài toán giải quyết vấn đề one-to-many mapping, cụ thể là multiple possible speech sequences can correspond to a text sequence due to variations in speech, such as pitch, duration, sound volume, and prosody. 
 
-Tiếp theo em nhắc lại một chút về:
+Tiếp theo mình nhắc lại một chút về:
 - Phoneme duration, which represents how long the speech voice sounds
 - Pitch, which is a key feature to convey emotions and greatly affects the speech prosody
 - Energy, which indicates the frame-level magnitude of Mel-spectrograms and directly affects the volume and prosody of speech.
@@ -25,7 +25,7 @@ Trong non-autoregressive TTS, thì nếu chỉ xem xét đầu vào liên quan t
 - Directly training the model with ground-truth target instead of the simplified output from teacher, and 
 - Introducing more variation information of speech (e.g., pitch, energy, and more accurate duration) as conditional inputs
 
-Sau đây em sẽ trình bày kĩ hơn về FastSpeech 2 và cả FastSpeech 2s(fully end-to-end text-to-waveform synthesis - directly generate speech waveform from the text in parallel)
+Sau đây mình sẽ trình bày kĩ hơn về FastSpeech 2 và cả FastSpeech 2s(fully end-to-end text-to-waveform synthesis - directly generate speech waveform from the text in parallel)
 
 # FastSpeech 2
 
