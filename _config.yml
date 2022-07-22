@@ -51,11 +51,11 @@ round-avatar: true
 social-network-links:
   email: "maxph22112000@gmail.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: "https://www.facebook.com/profile.php?id=100010363235671"
-  github: "https://github.com/manhph2211" 
+  facebook: "profile.php?id=100010363235671"
+  github: "manhph2211" 
 #  medium: yourname
 #  reddit: yourname
-  linkedin: "https://www.linkedin.com/in/manhph2211/"
+  linkedin: "manhph2211"
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
