@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Paper Review - FastSpeech2
-subtitle: 
+subtitle: Bài 3 TTS
 cover-img: /assets/img/path.jpg
 # thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
