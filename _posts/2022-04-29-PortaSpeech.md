@@ -2,7 +2,7 @@
 layout: post
 title: Paper Review - Portaspeech
 subtitle: Bài 8 TTS
-cover-img: /assets/img/path.jpg
+# cover-img: /assets/img/path.jpg
 # thumbnail-img: /assets/img/thumb.png
 # share-img: /assets/img/path.jpg
 tags: [Speech Synthesis, TTS]
