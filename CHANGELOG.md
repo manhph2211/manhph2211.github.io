@@ -1,213 +1,484 @@
-## Unreleased version
-
-- Added `navbar-var-length` config setting that allows the navigation menu to be the same length as the longest sub-menu, so that long words in the submenu are not cut off (#765) 
-- Added `post_search` config setting that creates a Search button in the navbar (older websites need to set `post_search: true` to enable this feature) (#770)
-- Added `edit_page_button` config setting that adds a "Edit page" button to the footer (to edit the current page on GitHub) (#1004)
-- BREAKING CHANGE: More control over RSS feed sharing: previously, an RSS feed was *always* generated, and if the config setting `rss-description` was set then there was an RSS icon in the footer. Now, an RSS feed is only generated when the config setting `rss-description` exists, and an RSS footer icon is only shown if `rss: true` is set in the `social-network-links` config settings 
-- Fixed page titles, subtitles, and excerpts rendering correctly when there are special characeters in them (#856) 
-- Slightly reworked margins and position for avatar image to resolve an alignment issue on Safari.
-- Changed the width at which the navbar collapses to a higher threshold because most modern non-mobile browsers are >1000px
-- Fixed bug where navbar secondary level dropdown items didn't inherit the same colour as the primary navbar links
-- Fixed bug where the navbar "burger" collapsed button didn't always revert back to a light colour
-- Fixed bug where using an image as a navbar title did not render in GitHub Project pages that did not have a custom domain
-- Fixed issue where image thumbnails on the feed page were always forced into a square rather than maintaining a proper image aspect ratio
-- Added support for Patreon, Medium, and Itch.io in the social network links in the footer (#783, #788)
-- Fixed bug where special characters in the title led to broken share tags (#744)
-- Updated staticman from using v2 (public servers) to v3 (private servers) due to the public servers becoming obsolete (#775)
-- Added support for Cloudflare Analytics (#797)
-- Added Reddit in share options of posts (#815)
-- Added support for giscus comments (#886) and CommentBox (#960)
-- Fixed bug where staticman didn't work jQuery slim version is used (#766)
-- Fixed very long strings to wrap around the next line rather than go off-screen (#787)
-- Added `footer-hover-col` config setting to customize the hover colour of links in the footer (#848)
-- Added social network links for Discord (#907), Kaggle (#961), and Hackerrank (#978)
-- Made the home page feed more accessible for screen readers (#950) 
-
-## v5.0.0 (2020-09-15)
-
-One of the major changes in this version is that a lot of time was spent on rethinking the entire SEO and social media sharing model (how a page looks on eg. Google, Twitter, Facebok). It was redesigned to be more simple and customizable. The new documentation has a section dedicated to SEO and social media sharing of a page. Unfortunately some changes that are not backwards-compatible had to be made.
-
-#### Breaking changes
-
-- Renamed `description` YAML parameter to `share-description` to be more clear
-- Renamed `description` config setting to `rss-description` since it was only used in RSS (the FAQ explains the difference between YAML parameters and config settings if you're confused)
-- Removed YAML parameter `use-site-title` (you can now specify the exact title using `share-title`)
-- Removed undocumented YAML parameters `meta-title` and `meta-description`
-- Removed `link-tags` config setting because it wasn't necessary. If you use tags, there will now always be a tags page created; if you don't use tags there won't be a tags page.
-- The YAML parameter `show-avatar` is now true by default. This has always been the case for GitHub Pages users, but not for `remote_theme` users. For consistency, it's now the default for everyone. (#715)
-
-#### New parameters and settings
-
-- Added `full-width` YAML parameter to allow having full-width pages
-- Added `feed_show_excerpt` config setting to show/hide the post excerpts on the feed page
-- Added `feed_show_tags` config setting to show/hide the list of tags on post previews on the feed page
-- Added `share-title` YAML parameter to give control over the search engine/social media title
-- Added `last-updated` YAML parameter to show a "Last Updated on" date for blog posts
-- Added `before-content` and `after-content` YAML parameters that allow you to add some common HTML before the main content of a page (below the title) or after the main content (above the footer). Works in a similar way to `footer-extra`.
-- Added `head-extra` YAML parameter which is similar to `footer-extra` but is used to include custom HTML code in a page's `<head>` tag
-- Added `site-js` config setting to provide JavaScript files that are used on all pages in the site
-
-#### New features and improvements
-
-- Improved the `footer-extra` YAML parameter to support multiple files instead of only a single file
-- Added automatic navbar color detection (#702)
-- When `nav-short` is turned on, the avatar will also be shorter
-- Changed navbar and footer background colour to be slightly darker, for better contrast with the default white page background for accessibility reasons
-- Changed the behaviour of `site-css` to include site-wide CSS file **before** instead of after page-specific files
-- Renamed internal css/js files from "main" to "beautifuljekyll" to make it easier for users to troubleshoot
-- Added alt text to all images for better accessibility
-- Made thumbnail images square instead of circles, as users reported that circles cut off important parts of images
-
-#### Bug fixes
-
-- Fixed rendering issues with `nav-short` parameter that caused the body of the page to start too low
-- Fixed some CSS styles that broke during the bootstrap 4 migration (#716)
-
-#### Library upgrades
-
-- Upgraded kramdown to version 2.3.0 to fix security issues
-- Upgraded jQuery to version 3.5.1 to fix a couple security vulnerabilities with the previous version
+## [3.4.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.2)
 
+### Enhancements
 
-## v4.1.0 (2020-08-08)
+- Improve UX of static comment forms. [#448](https://github.com/mmistakes/minimal-mistakes/issues/448)
 
-- Added Open Graph `site_name` meta field to pages automatically
-- Added `text-col` config setting  for main text color (#694)
-- Added `keywords` config setting to set the meta keywords on all pages (for SEO purposes) (#691)
-- Added `mobile-theme-col` config setting to allow a mobile theme colour (#692)
-- Added `site-css` config setting in the config file to provide CSS files that are used on all pages in the site (#695)
-- Added YAML parameter `description`: creates the meta description on a page, intended to provide a brief description of the page for search engines and when the page is shared (#690)
+## [3.4.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.1)
 
-## v4.0.1 (2020-07-13)
+### Enhancements
 
-- Fixed staticman comments UI that was broken since the migration to bootstrap 4
+- Add `staticman.filename` configuration with UNIX timestamp for sorting data files. example ~> `comment-1470943149`.
 
-## v4.0.0 (2020-07-12)
+### Bug Fixes
 
-- **BREAKING CHANGE** Replace `image` YAML parameter with `thumbnail-img` to be more clear
-- **MAJOR BEHAVIOUR CHANGE** Don't use the thumbnail as the avatar image
-- Cover image will automatically be used as thumbnail if none is provided
-- Image to share on social media will use the cover image or thumbnail if none is provided
-- All images (social media share, thumbnail, cover) can use either relative or absoluate paths.
-- Fixed issue where if a dropdown menu was the last item in the menu bar, it did not have a proper margin on the right
-- Added social network links: Mastodon (#646), Google Scholar, ORCID (#670)
-- Added support for sharing pages on new social network: VK (#657)
-- Use Open Graph type 'article' for blog posts (#669)
-- Use Twitter's large sumary card (large image) when there is a cover image, thumbnail image, or share image specified (#668)
-- Made post images in the feed page smaller on smaller devices
-- Fixed jQuery version in staticman (#671)
+- Don't add `<a>` to author name if URL is blank.
 
-## v3.0.0 (2020-05-07)
+## [3.4.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.4.0)
 
-- **BREAKING CHANGE** Upgraded from Bootstrap 3.3.2 to 4.4.1. This involved a major rewrite of most components. This shouldn't affect any users unless you have custom HTML/CSS code which the new Bootstrap could have broken.
-- **BREAKING CHANGE** Renamed `bigimg` YAML parameter to `cover-img`
-- **BREAKING CHANGE** Removed `googlefonts` YAML parameter since googlefonts are just CSS so they can be loaded via `ext-css`
-- **BREAKING CHANGE** Upgraded from jQuery 1.11.2 to 3.4.2. This should not affect most people
-- Added `navbar-border-col` setting in the config file
-- Added accessibility features where possible
-- Made the theme completely responsive by rewriting all CSS to use 'rem' instead of 'px'
-- Rewrote and simplified some JavaScript code to use CSS or Bootstrap alternatives that weren't available in 2015
-- Removed most of the sample posts so that users only have two sample posts to learn from
-- Improvements to the README instructions
+### Enhancements
 
-## v2.3.0 (2020-04-29)
+- Support static-based commenting via [Staticman](https://staticman.net/) for sites hosted with GitHub Pages. [#424](https://github.com/mmistakes/minimal-mistakes/issues/424)
 
-- Added YAML parameter `footer-extra` for including custom content in the footer
-- Fixed issue: linking to a specific part of a page resulted in scrolling too far (#69)
-- Added YAML parameter `nav-short` to have navbar permanently collapsed
-- Added social network link: Calendly
-- Fixed bug where RSS link in footer was showing even when turned off
+## [3.3.7](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.7)
 
-## v2.2.0 (2020-04-27)
+### Bug Fixes
 
-- Added social network link: Telegram (#625) (thanks @mashed-potatoes)
-- Moved the demo site to an independent URL: https://beautifuljekyll.com
-- Major documentation overhaul and cleanup of old files
-- Fixed a few bugs from the remote_theme migration
+- Re-enabled Jekyll plugins in `_config.yml` in case they aren't autoloaded in `Gemfile`. [#417](https://github.com/mmistakes/minimal-mistakes/issues/417)
 
-## v2.0.0 (2020-04-26)
+### Enhancements
 
-- Beautiful-Jekyll v2.0.0 available as an official Ruby gem
-- Beautifull-Jekyll now supports the `remote_theme` config (#339) (thanks @gpotter2 and @skalee)
-- Consolidated the demo site, the ruby gem, and the master branch into one
-- Added a `home` layout and used it in the index page
-- Added readtime support for the post header (#622) (thanks @MutMatt and @rubyreads)
-- Removed the dependency on `_data` folder since it doesn't get copied when using `remote_theme` (#614)
-- Added support for configuring lang attribute on `html` tag (#608) (thanks @skalee)
-- Added ability to disable round logo (thanks @gpotter2)
-- Added support for Utterances comments (#596) (thanks @colynn)
-- Removed 'just-comments' as it's getting killed at the end of the year
-- Upgraded font-awesome to 5.12.1 (#587) (thanks @cketti)
+- Fallback to `site.github.url` for use in `{{ base_path }}` when `site.url` is `nil`.
+- Replace Sass and Autoprefixer `npm` build scripts with [Jekyll's built-in asset support](https://jekyllrb.com/docs/assets/). [#333](https://github.com/mmistakes/minimal-mistakes/issues/333)
 
-## Prior to 2020
+### Maintenance
 
-**2018-12-24** Add support for Staticman comments (#440) (thanks @VincentTam)
+- Document `site.repository` and its role with [`github-metadata`](https://github.com/jekyll/github-metadata) gem.
+- Add sample [archive page with content](https://mmistakes.github.io/minimal-mistakes/archive-layout-with-content/) for testing styles on demo site.
 
-**2018-10-19** Move Google Analytics to the head (#419) (thanks @jpvicari)
+## [3.3.6](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.6)
 
-**2018-06-08** Add support for Facebook comments (#350) (thanks @npes87184)
+### Bug Fixes
 
-**2018-02-22** Automatically generate sitemap (#323) (thanks @JosemyDuarte)
+- Fix blank `site.teaser` bug. [#412](https://github.com/mmistakes/minimal-mistakes/issues/412)
 
-**2018-01-18** Add clickable tags to each post and a tags index page, works for GitHub sites (#307) (thanks @OCram85)
+## [3.3.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.5)
 
-**2018-01-14** Redo Dockerfile (#302) (thanks @jennydaman)
+### Enhancements
 
-**2018-01-06** More color personalization options (#297 and #299) (thanks @jennydaman)
+- Add English default text `site.locale` strings. [#407](https://github.com/mmistakes/minimal-mistakes/issues/407)
+- Add Portuguese localized UI text. [#411](https://github.com/mmistakes/minimal-mistakes/pull/411)
+- Add Italian localized UI text. [#409](https://github.com/mmistakes/minimal-mistakes/pull/409)
 
-**2018-01-05** Abstract the social networks logic (thanks @OCram85)
+### Maintenance
 
-**2018-01-03** Avatar image no longer causes a ghost click (thanks @alefi87)
+- Remove unused Google AdSense variables in `_config.yml`. [#404](https://github.com/mmistakes/minimal-mistakes/issues/404)
+- Update `Gemfile` instructions for using `github-pages` vs. native `jekyll` gems.
+- Disable `gems:` in `_config.yml` and enable plugins with Bundler instead.
+- Add `repository` to `_config.yml` to suppress GitHub Pages error `Liquid Exception: No repo name found.`
 
-**2017-10-16** Add GitHub buttons to posts (#265) (thanks @yonicd)
+## [3.3.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.4)
 
-**2017-09-04** Ability to change colour/image of navbar/footer/body
+### Enhancements
 
-**2017-08-17** Add support for notification, error, and warning boxes in markdown (#227) (thanks @OCram85)
+- Add support for configurable feed URL to use a service like FeedBurner instead of linking directly to `feed.xml` in `<head>` and the site footer. [#378](https://github.com/mmistakes/minimal-mistakes/issues/378), [#379](https://github.com/mmistakes/minimal-mistakes/pull/379), [#406](https://github.com/mmistakes/minimal-mistakes/pull/406)
+- Add Turkish localized UI text. [#403](https://github.com/mmistakes/minimal-mistakes/pull/403)
 
-**2017-08-12** Add social buttons for twitch, yelp, and steam (#234) (thanks @TheRealBenForce)
+### Maintenance
 
-**2017-03-30** Make the footer contact links friendly for screen readers (thanks @eugenius1)
+- Update gems: `activesupport` (4.2.7), `ffi` (1.9.14), `github-pages` (88), `jekyll-redirect-from` (0.11.0), `jekyll-watch` (1.5.0).
 
-**2017-03-30** Started a CHANGELOG file (thanks @eugenius1)
+## [3.3.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.3)
 
-**2017-01-28** Add Subresource Integrity (SRI) support (#164) (thanks @tony-ho)
+### Enhancements
 
-**2017-01-09** Add Google Tag Manager Integration (#157) (thanks @csarigoz)
+- Make footer stick to the bottom of the page.
 
-**2017-01-06** Add options to configure HTML document title (#154) (thanks @tony-ho)
+### Bug Fixes
 
-**2016-12-25** Allow dynamic images on each blog post (#143) (thanks @bbritten)
+- Fix `gallery` size bug [#402](https://github.com/mmistakes/minimal-mistakes/issues/402)
 
-**2016-12-15** Support `title-img` config param to have image in the navbar instead of text
+### Maintenance
 
-**2016-12-08** Add support for phone numbers in footer; fix #136
+- Set default `lang` to `en`.
 
-**2016-12-06** Update gemfile (#134) (thanks @stephentuso)
+## [3.3.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.2)
 
-**2016-10-09** Add Docker deployment (#114) (thanks @mangar)
+### Bug Fixes
 
-**2016-08-06** Add social share buttons for posts (thanks @rtlee9)
+- Fix JavaScript that triggers "sticky" sidebar to avoid layout issues on screen sizes < `1024px`. [#396](https://github.com/mmistakes/minimal-mistakes/issues/396)
 
-**2016-07-29** Add CSS styling to code chunks
+## [3.3.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.3.1)
 
-**2016-07-27** Add clickable tags that lead to a tag page (doesn't work for GitHub hosted sites) (thanks @epwalsh)
+### Enhancements
 
-**2016-07-21** Add support for twitter cards (sharing on Twitter will be better); fixes #70
+- Enable image popup on < 500px wide screens. [#385](https://github.com/mmistakes/minimal-mistakes/issues/385)
+- Indicate the relationship between component URLs in a paginated series by applying `rel="prev"` and `rel="next"` to pages that use `site.paginator`. [#253](https://github.com/mmistakes/minimal-mistakes/issues/253)
+- Improve link posts in archive listings. [#276](https://github.com/mmistakes/minimal-mistakes/issues/276)
 
-**2016-03-18** Support full-width images in page headers; fixes #37
+### Maintenance
 
-**2016-03-18** Support menus in navigation bar
+- Update gems: `github-pages` (86), `ffi` 1.9.13, `jekyll-mentions` 1.1.3, and `rouge` 1.11.1
+- Fix note about custom sidebar content appearing below author profile. [#388](https://github.com/mmistakes/minimal-mistakes/issues/388)
 
-**2016-02-07** Avatar is now conditional (thanks @hristoyankov)
+## [3.2.13](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.13)
 
-**2016-02-02** Migrate (forced to...) to jekyll 3
+### Enhancements
 
-**2016-01-22** Make sure not to include JQuery twice, fixes #29
+- Add English default UI text for Canada, Great Britain, and Australia. [#377](https://github.com/mmistakes/minimal-mistakes/issues/377)
+- Switch default locale from `en-US` to `en`.
 
-**2015-11-19** Support external links in navigation bar; fixes #3
+## [3.2.12](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.12)
 
-... Many small changes because the site was in its infancy
+### Enhancements
 
-**2015-03-12** Beautiful Jekyll version 0.0000001 is released!
+- Remove window width "magic number" from sticky sidebar check in `main.js` for improved flexibility. [#375](https://github.com/mmistakes/minimal-mistakes/pull/375)
 
+### Bug Fixes
+
+- Fix author override conditional where a missing `authors.yml` would show broken sidebar content. Defaults to `site.author`. [#376](https://github.com/mmistakes/minimal-mistakes/pull/376)
+
+## [3.2.11](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.11)
+
+### Bug Fixes
+
+- Fix disappearing author sidebar links [#372](https://github.com/mmistakes/minimal-mistakes/issues/372)
+
+### Maintenance
+
+- Update gems: `github-pages` (84), `jekyll-github-metadata` 2.0.2, and `kramdown` 1.11.1
+- Update vendor JavaScript: jQuery 1.12.4, Stickyfill.js 1.1.4
+- Update Font Awesome 4.6.3
+
+## [3.2.10](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.10)
+
+### Maintenance
+
+- Add `CONTRIBUTING.md`
+
+## [3.2.9](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.9)
+
+### Enhancements
+
+- Add support for [header overlay images](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#header-overlay) for Open Graph images. [#358](https://github.com/mmistakes/minimal-mistakes/pull/358)
+
+### Bug Fixes
+
+- Fix `Person` typo Schema.org type [#358](https://github.com/mmistakes/minimal-mistakes/pull/358)
+
+### Maintenance
+
+- Update `github-pages` gem and dependencies.
+- Remove `minutes_read` to avoid awkward reading time wording [#356](https://github.com/mmistakes/minimal-mistakes/issues/356)
+
+## [3.2.8](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.8)
+
+### Bug Fixes
+
+- Remove `cursor: pointer` that appears on white-space surrounding author side list items and links. [#354](https://github.com/mmistakes/minimal-mistakes/pull/354)
+
+### Maintenance
+
+- Add contributing information to `README.md`. [#357](https://github.com/mmistakes/minimal-mistakes/issues/357)
+
+## [3.2.7](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.7)
+
+### Enhancements
+
+- Add French localized UI text. [#346](https://github.com/mmistakes/minimal-mistakes/pull/346)
+
+### Bug Fixes
+
+- Fix branch logic for Yandex and Alexa in `seo.html`. [#348](https://github.com/mmistakes/minimal-mistakes/pull/348)
+
+## [3.2.6](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.6)
+
+### Bug Fixes
+
+- Fix error `Liquid Exception: divided by 0 in _includes/archive-single.html, included in _layouts/single.html` caused by null `words_per_minute` in `_config.yml`. [#345](https://github.com/mmistakes/minimal-mistakes/pull/345)
+
+## [3.2.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.5)
+
+### Bug Fixes
+
+- Fix link color in hero overlay to be white.
+- Remove underlines from archive item titles.
+
+## [3.2.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.4)
+
+### Enhancements
+
+- Improve text alignment of masthead, hero overlay, page footer to be flush left and remove awkward white-space gaps. [#342](https://github.com/mmistakes/minimal-mistakes/issues/342)
+- Add Spanish localized UI text. [#338](https://github.com/mmistakes/minimal-mistakes/pull/338)
+
+### Bug Fixes
+
+- Fix alignment of icons in author sidebar [#341](https://github.com/mmistakes/minimal-mistakes/issues/341)
+
+### Maintenance
+
+- Add background color to page footer to set it apart from main content. [#342](https://github.com/mmistakes/minimal-mistakes/issues/342)
+- Add terms and privacy policy to theme's demo site. [#343](https://github.com/mmistakes/minimal-mistakes/issues/343)
+- Update screenshots found in theme documentation.
+
+## [3.2.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.3)
+
+### Enhancements
+
+- Add [Discourse](https://www.discourse.org/) as a commenting provider. [#335](https://github.com/mmistakes/minimal-mistakes/pull/335)
+
+## [3.2.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.2)
+
+### Enhancements
+
+- Add support for image captions in Magnific Popup overlays via the [`gallery`](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#gallery) helper. [#334](https://github.com/mmistakes/minimal-mistakes/issues/334)
+
+## [3.2.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.1)
+
+### Bug Fixes
+
+- Remove need for "double tapping" masthead menu links on iOS devices. [#315](https://github.com/mmistakes/minimal-mistakes/issues/315)
+
+### Maintenance
+
+- Add `ISSUE_TEMPLATE.md` for improve issue submission process.
+
+## [3.2.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.2.0)
+
+### Bug Fixes
+
+- Fix missing category/tag links in post footer due to possible conflict with `site.tags` and `site.categories`. [#329](https://github.com/mmistakes/minimal-mistakes/issues/329#issuecomment-222375568)
+
+## [3.1.8](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.8)
+
+### Bug Fixes
+
+- Fix `Liquid Exception: undefined method 'gsub' for nil:NilClass in _layouts/single.html` error when `page.title` is null. `<h1>` element is now conditional if `title: ` is not set for a `page` or collection item. [#312](https://github.com/mmistakes/minimal-mistakes/issues/312)
+
+### Maintenance
+
+- Remove duplicate `fa-twitter` and `fa-twitter-square` classes from `_utilities.scss`. [#302](https://github.com/mmistakes/minimal-mistakes/issues/302)
+
+- Document installing additional Jekyll gem dependencies when using `gem "jekyll"` instead of `gem "github-pages"` to avoid any errors on run. [#305](https://github.com/mmistakes/minimal-mistakes/issues/305)
+
+## [3.1.7](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.7)
+
+### Enhancements
+
+- Add translation key for "Recent Posts" used in home page `index.html`. [#316](https://github.com/mmistakes/minimal-mistakes/pull/316)
+
+### Maintenance
+
+- Small fix to avoid underlying the whitespace between icons and related text when hovering. [#303](https://github.com/mmistakes/minimal-mistakes/pull/303)
+
+## [3.1.6](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.6)
+
+### Maintenance
+
+- Update gem dependencies. Run `bundle` to update `Gemfile.lock`.
+
+## [3.1.5](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.5)
+
+### Maintenance
+
+- Fix `www` and `https` links in author profile include [#293](https://github.com/mmistakes/minimal-mistakes/pull/293)
+
+## [3.1.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.4)
+
+### Enhancements
+
+- Add overlay_filter param to hero headers [#298](https://github.com/mmistakes/minimal-mistakes/pull/298)
+
+## [3.1.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.3)
+
+### Enhancements
+
+- Improve `site.locale` documentation [#284](https://github.com/mmistakes/minimal-mistakes/issues/284)
+- Remove ProTip note about protocol-less `site.url` as it is an anti-pattern [#288](https://github.com/mmistakes/minimal-mistakes/issues/288)
+
+### Bug Fixes
+
+- Fix `og_image` URL in seo.html [#277](https://github.com/mmistakes/minimal-mistakes/issues/277)
+- Fix `author_profile` toggle when assigned in a `_layout` [#285](https://github.com/mmistakes/minimal-mistakes/issues/285)
+- Fix typo in `build:all` npm script [#283](https://github.com/mmistakes/minimal-mistakes/pull/283)
+- Fix URL typo documentation [#287](https://github.com/mmistakes/minimal-mistakes/issues/287)
+- SEO author bug. If `twitter.username` is set and `author.twitter` is `nil` bad things happen. [#289](https://github.com/mmistakes/minimal-mistakes/issues/289)
+
+## [3.1.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.2)
+
+### Enhancements
+
+- Explain how to use `nav_list` helper in [documentation](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#navigation-list).
+- Reduce left/right padding on smaller screens to increase width of main content column.
+
+### Bug Fixes
+
+- Fix alignment issues with related posts [#273](https://github.com/mmistakes/minimal-mistakes/issues/273) and "Follow" button in author profile [#274](https://github.com/mmistakes/minimal-mistakes/issues/274).
+
+## [3.1.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.1)
+
+### Bug Fix
+
+- Fixed reading time bug when `words_per_minute` wasn't set in `_config.yml` [#271](https://github.com/mmistakes/minimal-mistakes/issues/271)
+
+## [3.1.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.1.0)
+
+### Enhancements
+
+- Updated [Font Awesome](https://fortawesome.github.io/Font-Awesome/whats-new/) to version 4.6.1
+- Added optional GitHub and Bitbucket links to footer if set on `site.author` in `_config.yml`.
+
+### Bug Fixes
+- Fixed Bitbucket URL typo in author sidebar.
+
+## [3.0.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/3.0.3)
+
+### Enhancements
+
+- Rebuilt the entire theme: layouts, includes, stylesheets, scripts, you name it.
+- Refreshed the look and feel while staying true to the original design of the theme (author sidebar/main content).
+- Replaced grid system with [Susy](http://susy.oddbird.net/).
+- Replaced Grunt tasks with `npm` scripts.
+- Removed Google Fonts and replaced with system fonts to improve performance (they can be [added back](https://mmistakes.github.io/minimal-mistakes/docs/stylesheets/) if desired)
+- Greatly improved [theme documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
+- Increased the amount of sample posts, sample pages, and sample collections to throughly test the theme and edge-cases.
+- Moved all sample content and assets out of `master` to keep it as clean as possible for forking.
+- Added new layouts for `splash` pages, archives for [`jekyll-archives`](https://github.com/jekyll/jekyll-archives) if enabled, and [`compress.html`](https://github.com/penibelst/jekyll-compress-html) to improve performance.
+- Added taxonomy links to posts (tags and categories).
+- Added optional "reading time" meta data.
+- Improved Liquid used for Twitter Cards and Open Graph data in `<head>`.
+- Improved `gallery` include helper and added `feature_row` for use with splash page layout.
+- Added Keybase.io, author web URI, and Bitbucket optional links to sidebar.
+- Add `feed.xml` link to footer.
+- Added a [UI text data file](https://mmistakes.github.io/minimal-mistakes/docs/ui-text/) to easily change all text found in the theme.
+- Added LinkedIn to optional social share buttons.
+- Added Facebook, Google+, and custom commenting options in addition to Disqus.
+- Added optional breadcrumb links.
+
+## [2.2.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/2.2.1)
+
+## [2.2.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/2.2.0)
+
+### Enhancements
+
+- Add support for Jekyll 3.0
+- Minor updates to syntax highlighting CSS and theme documentation
+
+## [2.1.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/2.1.3)
+
+### Enhancements
+
+- Cleaner print styles that remove the top navigation, social sharing buttons, and other elements not needed when printed.
+
+## [2.1.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/2.1.2)
+
+### Enhancements
+
+- Add optional CodePen icon/url to author side bar [#156](https://github.com/mmistakes/minimal-mistakes/pull/156)
+- Documented Stackoverflow username explanation in `_config.yml` [#157](https://github.com/mmistakes/minimal-mistakes/pull/157)
+- Simplified Liquid in `post-index.html` to better handle year listings [#166](https://github.com/mmistakes/minimal-mistakes/pull/166)
+
+### Bug Fixes
+
+- Cleanup Facebook related Open Graph meta tags [#149](https://github.com/mmistakes/minimal-mistakes/issues/149)
+- Corrected minor typos [#158](https://github.com/mmistakes/minimal-mistakes/pull/158) [#175](https://github.com/mmistakes/minimal-mistakes/issues/175)
+
+## [2.1.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/2.1.1)
+
+### Enhancements
+
+- Add optional XING profile link to author sidebar
+- Include open graph meta tags for feature image (if assigned) [#149](https://github.com/mmistakes/minimal-mistakes/issues/149)
+- Create an include for feed footer
+
+### Bug Fixes
+
+- Remove http protocol from Google search form on sample 404 page
+- Only show related posts if there are one or more available
+- Fix alignment of email address link in author sidebar
+
+## [2.1.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/2.1.0)
+
+### Enhancements
+
+- Add optional social sharing buttons ([#42](https://github.com/mmistakes/minimal-mistakes/issues/42))
+
+![social sharing buttons](https://cloud.githubusercontent.com/assets/1376749/5860522/d9f28a96-a22f-11e4-9b83-940a3a9a766a.png)
+
+- Add Soundcloud, YouTube ([#95](https://github.com/mmistakes/minimal-mistakes/pull/95)), Flickr ([#119](https://github.com/mmistakes/minimal-mistakes/pull/119)), and Weibo ([#116](https://github.com/mmistakes/minimal-mistakes/pull/116)) icons for use in author sidebar.
+- Fix typos in posts and documentation and remove references to Less
+- Include note about Octopress gem being optional
+- Post author override support extended to the Atom feed ([#71](https://github.com/mmistakes/minimal-mistakes/pull/71))
+- Only include email address in feed if specified in `_config.yml` or author `_data`
+- Wrap all page content in `#main` to harmonize article and post index styles ([#86](https://github.com/mmistakes/minimal-mistakes/issues/86))
+- Include new sample feature images for posts and pages
+- Table of contents improvements: fix collapse toggle, indent nested elements, show on small screens, and create an `_include` for reusing in posts and pages.
+- Include note about running Jekyll with `bundle exec` when using Bundler
+- Fix home page path in top navigation
+- Remove Google Authorship ([#120](https://github.com/mmistakes/minimal-mistakes/issues/120))
+- Remove duplicate author content that displayed in `div.article-author-bottom`
+- Removed unused `_sass/print.scss` styles
+- Improve comments in `.scss` files
+
+## [2.0.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/v2.0)
+
+## [1.3.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/1.3.3)
+
+### Enhancements
+
+- Added new icons and profile links for Stackoverflow, Dribbble, Pinterest, Foursquare, and Steam to the author bio sidebar.
+- Cleaned up the Kramdown auto table of contents styling to be more readable
+- Removed page width specific .less stylesheets and created mixins for easier updating
+- Removed Modernizr since it wasn't being used
+- Added pages to sitemap.xml
+- Added category: to rake new_post task
+- Minor typographic changes
+
+### Bug Fixes
+
+- Corrected various broken links in README and Theme Setup.
+
+## [1.3.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/1.3.1)
+
+### Enhancements
+
+- Cleaned up table of contents styling
+- Reworked top navigation to be a better experience on small screens. Nav items now display vertically when the menu button is tapped, revealing links with larger touch targets.
+
+![menu animation](https://camo.githubusercontent.com/3fbd8c1326485f4b1ab32c0005c0fca7660b5d31/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f313337363734392f323136343037352f31653366303663322d393465372d313165332d383961612d6436623636376562306564662e676966)
+
+## [1.2.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/1.2.0)
+
+### Bug Fixes
+
+- Table weren't filling the entire width of the content container. They now scale at 100%. Thanks [@dhruvbhatia](https://github.com/dhruvbhatia)
+
+### Enhancements
+
+- Decreased spacing between Markdown footnotes
+- Removed dark background on footer
+- Removed UPPERCASE styling on post titles in the index listing
+
+## [1.1.4](https://github.com/mmistakes/minimal-mistakes/releases/tag/1.1.4)
+
+### Bug Fixes
+
+- Fix top navigation bug issue ([#10](https://github.com/mmistakes/minimal-mistakes/issues/10)) for real this time. Remember to clear your floats kids.
+
+## [1.1.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/1.1.3)
+
+### Bug Fixes
+
+- Fix top navigation links that weren't click able on small viewports (Issue [#10](https://github.com/mmistakes/minimal-mistakes/issues/10)).
+- Remove line wrap from top navigation links that may span multiple lines.
+
+## [1.1.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/1.1.2)
+
+### Enhancements
+
+- Added Grunt build script for compiling Less/JavaScript and optimizing image assets.
+- Added support for large image summary Twitter card.
+- Stylesheet adjustments
+
+## [1.1.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/1.1.1)
+
+### Bug Fixes
+
+- Removed [Typeplate](http://typeplate.com/) styles. Was [causing issues with newer versions of Less](https://github.com/typeplate/typeplate.github.io/issues/108) and is no longer maintained.
+
+### Enhancements
+
+- Added [image attribution](http://mmistakes.github.io/minimal-mistakes/theme-setup/#feature-images) for post and page feature images.
+- Added [404 page](http://mmistakes.github.io/minimal-mistakes/404.html).
+- Cleaned up various Less variables to better align with naming conventions used in other MM Jekyll themes.
+- Removed Chrome Frame references.
+- Added global CSS3 transitions to text and block elements.
+- Improved typography in a few places.
+
+## [1.0.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/v1.0.2)
+
+### Enhancements
+
+- Google Analytics, Google Authorship, webmaster verifies, and Twitter card meta are now optional.
+
+## [1.0.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/v1.0.1)
