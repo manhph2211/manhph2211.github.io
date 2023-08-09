@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Manh Pham"
-  avatar           : "profile.jpeg"
+  avatar           : "profile.png"
   bio              : "Focusing on building scalable and efficient ML applications to deploy models in real-world environments 😄"
   location         : "Location"
   employer         :
