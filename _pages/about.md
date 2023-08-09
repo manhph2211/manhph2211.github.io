@@ -13,15 +13,15 @@ redirect_from:
 <p align="center">
   <em>
     I am now a PhD researcher having passionated in <b>Machine Learning on Edge Devices</b> <img src="./images/Developer.gif" width="30px">
-     <img src="./images/Designer.gif" width="36px">  I am an ambitious, hard-working, and aggressive learner who believes the core value of any business is to improve people's lives</b>
+     <img src="./images/Designer.gif" width="36px">  I am an ambitious, hard-working, and aggressive learner who believes the core value of any business is to improve people's lives.
   </em> 
   <br>
   <img src="./images/dog_2.gif" width="50" /> <b><i align="center">Thought : "Be strong, be yourself!”</i></b> <img src="./images/dog_1.gif" width="50" />
 </p>
 
-<br>
+I am deeply immersed in the realms of Machine Learning, Deep Learning and Mobile Computing. My academic pursuits revolve around crafting comprehensive solutions that span the entire healthcare spectrum. Through the convergence of these technologies, I am devoted to developing end-to-end and scalable systems that empower individuals to seamlessly track their health and receive accurate diagnoses.
 
-### <img src="./images/stats.gif" width="30px"> ***About Me***
+### <img src="./images/stats.gif" width="30px"> ***News***
 - 👋 I'm always eager to learn new things day by day
 - 👯 I'm really interested in applying AI as well as IoT to address real world problems
 - 🔭 I’m looking for a team to research and develop promising products :raising_hand:
