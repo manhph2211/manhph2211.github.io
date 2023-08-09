@@ -20,7 +20,8 @@ redirect_from:
 </p>
 
 ### <img src="./images/stats.gif" width="30px"> ***News***
-- **[8/2023]** I got [Vingroup Scholarship for Vietnamese Talents](https://dantri.com.vn/khoa-hoc-cong-nghe/cham-tay-den-giac-mo-voi-hoc-bong-khoa-hoc-cong-nghe-vingroup-20230726092511696.htm?fbclid=IwAR0Zxbm5v86PFAjGbi0_azL7_ZrLHNTep_UUCpSRB189GUa0A-e-9ppcB_4) throughout my PhD at SMU.
 
-<br>
+- **[1/2023]((https://dantri.com.vn/khoa-hoc-cong-nghe/cham-tay-den-giac-mo-voi-hoc-bong-khoa-hoc-cong-nghe-vingroup-20230726092511696.htm?fbclid=IwAR0Zxbm5v86PFAjGbi0_azL7_ZrLHNTep_UUCpSRB189GUa0A-e-9ppcB_4))** I got Vingroup Scholarship for Vietnamese Talents throughout my PhD at SMU.
+
+- **[10/2022]((http://vanmieu.gov.vn/en/cac-hoat-ong/su-kien/338/))** I got Odon Valet Scholarship 2022.
 
