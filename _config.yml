@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en-Si"
+locale                   : "en-SG"
 title                    : "Manh Pham"
 title_separator          : "-"
 name                     : &name "Your Name"
@@ -85,7 +85,6 @@ author:
   bio              : "Focusing on building scalable and efficient ML applications to deploy models in real-world environments 😄"
   location         : "Location"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=vdu7WasAAAAJ&hl=vi"
   email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
@@ -102,7 +101,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/manhph2211/"
+  linkedin         : "manhph2211"
   orcid            : 
   pinterest        :
   soundcloud       :
