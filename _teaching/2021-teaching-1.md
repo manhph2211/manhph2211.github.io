@@ -8,6 +8,8 @@ date: 2021-09-15
 location: "Hanoi, Vietnam"
 ---
 
+Teaching Assistant in Machine Learning, Deep Learning courses. 
+
 Experience
 ======
 
