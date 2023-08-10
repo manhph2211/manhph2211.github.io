@@ -3,6 +3,9 @@ main:
   - title: "Publications"
     url: /publications/
 
+  - title: "Awards and Honors"
+    url: /markdown/
+
   - title: "Talks"
     url: /talks/    
 
@@ -15,8 +18,6 @@ main:
   - title: "Blog Posts"
     url: /year-archive/
     
-  - title: "Experience"
+  - title: "Services"
     url: /cv/
-    
-  - title: "Awards and Honors"
-    url: /markdown/
+  
