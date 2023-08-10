@@ -2,7 +2,7 @@
 title: "Teaching Assistant"
 collection: teaching
 type: "AI engineer"
-permalink: /teaching/teaching-1
+permalink: /teaching/2021-teaching-1
 venue: "VinBigdata, VinGroup"
 date: 2021-09-15
 location: "Hanoi, Vietnam"
