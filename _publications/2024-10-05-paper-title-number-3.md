@@ -1,6 +1,5 @@
 ---
 title: "C-MELT: Contrastive Enhanced Masked Auto-Encoders for ECG-Language Pre-Training"
-collection: publications
 permalink: /publication/2024-10-05-paper-title-number-3
 excerpt: ''
 venue: ''
