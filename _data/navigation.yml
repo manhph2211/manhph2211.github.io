@@ -3,20 +3,20 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Awards and Honors"
-    url: /markdown/  
+  # - title: "Awards and Honors"
+  #   url: /markdown/  
 
-  - title: "Teaching"
-    url: /teaching/    
+  # - title: "Teaching"
+  #   url: /teaching/    
 
   - title: "Blog Posts"
     url: /year-archive/
   
-  - title: "Talks"
-    url: /talks/  
+  # - title: "Talks"
+  #   url: /talks/  
     
-  - title: "Services"
-    url: /cv/
+  # - title: "Services"
+  #   url: /cv/
       
   # - title: "Portfolio"
   #   url: /portfolio/

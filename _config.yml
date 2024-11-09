@@ -82,10 +82,10 @@ analytics:
 author:
   name             : "Manh Pham"
   avatar           : "profile.jpeg"
-  bio              : "Focusing on building scalable and efficient ML applications to deploy models in real-world environments 😄"
+  bio              : "Focusing on building reliable health monitoring with self supervised learning and generative modeling 😄"
   location         : "Location"
   employer         :
-  googlescholar    : "https://scholar.google.com/citations?user=vdu7WasAAAAJ&hl=vi"
+  googlescholar    : #"https://scholar.google.com/citations?user=vdu7WasAAAAJ&hl=vi"
   email            : "Maxph22112000@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
