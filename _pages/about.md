@@ -22,7 +22,7 @@ I am a driven PhD student, deeply immersed in the realms of Deep Learning and Mo
 
 - **[01/2025]()** One paper accepted at Nature Scientific Data.
 
-- **[10/2024]()** One paper accepted at Time Series in the Age of Large Models (NeurIPS 2024).
+- **[10/2024]()** One paper accepted at Time Series in the Age of Large Models workshop (NeurIPS 2024).
 
 - **[08/2023](https://computing.smu.edu.sg/phd/students)** I officially joined SMU as a PhD Student. 
 
