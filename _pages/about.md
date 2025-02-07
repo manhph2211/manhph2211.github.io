@@ -20,6 +20,10 @@ I am a driven PhD student, deeply immersed in the realms of Deep Learning and Mo
 
 ### <img src="./images/stats.gif" width="30px"> ***News***
 
+- **[01/2025]** One paper accepted at Scientific Data.
+
+- **[10/2024]** One paper accepted at Time Series in the Age of Large Models (NeurIPS 2024).
+
 - **[08/2023](https://computing.smu.edu.sg/phd/students)** I officially joined SMU as a PhD Student. 
 
 - **[01/2023](https://dantri.com.vn/khoa-hoc-cong-nghe/cham-tay-den-giac-mo-voi-hoc-bong-khoa-hoc-cong-nghe-vingroup-20230726092511696.htm?fbclid=IwAR0Zxbm5v86PFAjGbi0_azL7_ZrLHNTep_UUCpSRB189GUa0A-e-9ppcB_4)** I got Vingroup Scholarship for Vietnamese Young Talents.
