@@ -38,7 +38,7 @@ I am a driven PhD student, deeply immersed in the realms of Deep Learning and Mo
 
 - **[01/2018]()** I got second prize (top 24) in Vietnamese National Physics Competition.
 
-- **[04/2017]()** I got gold medal (top 2) in the Coastal Region and the Northern Delta.
+- **[04/2017]()** I got gold medal (top 2) in the Coastal Region and the Northern Delta Physics Competition.
 
 
 ### ***💻 Tech Stack***
