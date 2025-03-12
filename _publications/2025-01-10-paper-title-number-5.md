@@ -1,6 +1,6 @@
 ---
 title: "WF-PPG: A Wrist-finger Dual-Channel Dataset for Studying the Impact of Contact Pressure on PPG Morphology"
-permalink: /publication/2025-01-10-paper-title-number-4
+permalink: /publication/2025-01-10-paper-title-number-5
 excerpt: ''
 venue: 'Scientific Data'
 date: 2025-01-10
