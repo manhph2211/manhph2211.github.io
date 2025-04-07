@@ -9,14 +9,14 @@ redirect_from:
 ---
 
 <!-- Pham Hung Manh is an AI Researcher, deeply immersed in the realms of Deep Learning and Mobile Computing. My academic pursuits revolve around crafting comprehensive solutions that span the entire healthcare spectrum. Through the convergence of these technologies, I am devoted to developing end-to-end and scalable systems that empower individuals to seamlessly track their health and receive accurate diagnoses. -->
-Pham Hung Manh is a versatile and driven AI researcher specializing in deep learning, with expertise in natural language processing, computer vision, speech processing, and biosignal analysis. His recent research explores self-supervised learning, large multimodal modeling, and edge computing, advancing the frontiers of efficient digital health. Focused on developing end-to-end and scalable systems, he aims to empower individuals with seamless health tracking and accurate diagnostics.
+Pham Hung Manh is a versatile and driven AI researcher specializing in deep learning, with expertise in natural language processing, computer vision, speech processing, and biosignal analysis. His recent research explores self-supervised learning, large multimodal modeling, and edge computing, advancing the frontiers of efficient digital health.
 
 <img src="./images/dog_2.gif" width="50" /> <b><i align="center">“It always seems impossible until it’s done.” ―Nelson Mandela”</i></b> <img src="./images/dog_1.gif" width="50" />
 
 ### <img src="./images/stats.gif" width="30px"> ***Quick Me***
-- 👋 I'm always eager to learn new things day by day
-- 👯 I'm really interested in applying AI as well as IoT to address real world problems
-- 🔭 I’m looking for a team to to collaborate on research and develop promising products
+- 👋 I'm always eager to learn new things day by day.
+- 👯 I'm really interested in applying AI as well as IoT to address real world problems.
+- 🔭 I’m looking for a team to to collaborate on research and develop promising products.
 - ⚡ Fun fact: I'm really into soccer and my favorite team is MU, still 🙂
 
 ### <img src="./images/stats.gif" width="30px"> ***News***
