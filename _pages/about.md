@@ -21,6 +21,8 @@ Manh is a versatile and driven AI researcher specializing in deep learning, with
 
 ### <img src="./images/stats.gif" width="30px"> ***News***
 
+- **[05/2025]()** One paper accepted at ICML 2025.
+
 - **[01/2025]()** One paper accepted at Nature Scientific Data.
 
 - **[10/2024]()** One paper accepted at Time Series in the Age of Large Models workshop (NeurIPS 2024).
