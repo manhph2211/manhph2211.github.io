@@ -1,6 +1,6 @@
 ---
 title: "Revisiting Masked Auto-Encoders for ECG-Language Representation Learning"
-permalink: /publication/2025-01-10-paper-title-number-4
+permalink: /publication/2025-01-10-paper-title-number-3
 excerpt: ''
 venue: 'NeurIPS'
 date: 2024-12-01

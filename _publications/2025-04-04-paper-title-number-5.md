@@ -1,6 +1,6 @@
 ---
 title: "Reliable Physiological Monitoring on the Wrist Using Generative Deep Learning to Address Poor Skin-Sensor Contact"
-permalink: /publication/2025-04-04-paper-title-number-6
+permalink: /publication/2025-04-04-paper-title-number-5
 excerpt: ''
 venue: ''
 date: 2025-04-04
