@@ -15,11 +15,12 @@ Manh is a Ph.D. student with special love in the realms of Deep Learning and Mob
 
 ### <img src="./images/stats.gif" width="30px"> ***Quick Me***
 - 👋 I'm always eager to learn new things day by day.
-- 👯 I'm really interested in applying AI as well as IoT to address real world problems.
-- 🔭 I’m looking for a team to to collaborate on research and develop promising products.
+- 👯 I'm really interested in applying AI as well as IoT to improve healthcare delivery, diagnostics, and patient outcomes.
+- 🤝 I’m currently open to research collaborations and development projects where we can turn innovative concepts into real-world impact.
 - ⚡ Fun fact: I'm really into soccer and my favorite team is MU, still 🙂
 
-### <img src="./images/stats.gif" width="30px"> ***News***
+<!-- ## <img src="./images/stats.gif" width="30px"> ***News*** -->
+## **News** 🔥
 
 - **[05/2025]()** One paper accepted at ICML (3260/12107).
 
