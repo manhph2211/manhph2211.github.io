@@ -20,7 +20,7 @@ Manh is a Ph.D. student with special love in the realms of Deep Learning and Mob
 - ⚡ Fun fact: I'm really into soccer and my favorite team is MU, still 🙂
 
 <!-- ## <img src="./images/stats.gif" width="30px"> ***News*** -->
-## **News** 🔥
+### 🔥 ***News***
 
 - **[05/2025]()** One paper accepted at ICML (3260/12107).
 
