@@ -16,8 +16,8 @@ Manh is a Ph.D. student with special love in the realms of Deep Learning and Mob
 ### <img src="./images/stats.gif" width="30px"> ***Quick Me***
 - 👋 I'm always eager to learn new things day by day.
 - 👯 I'm really interested in applying AI as well as IoT to improve healthcare delivery, diagnostics, and patient outcomes.
-- 🤝 I’m currently open to research collaborations and development projects where we can turn innovative concepts into real-world impact.
-- ⚡ Fun fact: I'm really into soccer and my favorite team is MU, still 🙂
+- 🤝 I’m currently open to research collaborations and projects aimed at transforming innovative ideas into impactful healthcare solutions.
+- ⚡ Fun fact: I'm really into football and my favorite team is MU, still 🙂
 
 <!-- ## <img src="./images/stats.gif" width="30px"> ***News*** -->
 ### 🔥 ***News***
