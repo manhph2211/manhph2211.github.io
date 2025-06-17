@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 <!-- Pham Hung Manh is an AI Researcher, deeply immersed in the realms of Deep Learning and Mobile Computing. My academic pursuits revolve around crafting comprehensive solutions that span the entire healthcare spectrum. Through the convergence of these technologies, I am devoted to developing end-to-end and scalable systems that empower individuals to seamlessly track their health and receive accurate diagnoses. -->
-Manh is a Ph.D. student with special love in the realms of Deep Learning and Mobile Computing. His recent research explores self-supervised learning, multimodal generative modeling, and LLMs, advancing the frontiers of efficient digital health.
+Manh is a Ph.D. student under the supervision of [Prof. Dong Ma](https://www.dongma.info/) and [Prof. Aaqib Saeed](https://aqibsaeed.github.io/), with special love in the realms of Deep Learning and Mobile Computing. His recent research explores self-supervised learning, multimodal generative modeling, and LLMs, advancing the frontiers of efficient digital health. 
 
 <img src="./images/dog_2.gif" width="50" /> <b><i align="center">“It always seems impossible until it’s done.” - Nelson Mandela”</i></b> <img src="./images/dog_1.gif" width="50" />
 
@@ -21,6 +21,8 @@ Manh is a Ph.D. student with special love in the realms of Deep Learning and Mob
 
 <!-- ## <img src="./images/stats.gif" width="30px"> ***News*** -->
 ### 🔥 ***News***
+
+- **[06-2025]()** I am honored to be selected as Delegate of the 6th Global Vietnamese Young Scholars Forum.
 
 - **[05/2025]()** One paper accepted at ICML (3260/12107).
 
@@ -34,13 +36,17 @@ Manh is a Ph.D. student with special love in the realms of Deep Learning and Mob
 
 - **[01/2023](https://dantri.com.vn/khoa-hoc-cong-nghe/cham-tay-den-giac-mo-voi-hoc-bong-khoa-hoc-cong-nghe-vingroup-20230726092511696.htm?fbclid=IwAR0Zxbm5v86PFAjGbi0_azL7_ZrLHNTep_UUCpSRB189GUa0A-e-9ppcB_4)** I got Vingroup Scholarship for Vietnamese Young Talents.
 
-- **[10/2022](http://vanmieu.gov.vn/en/cac-hoat-ong/su-kien/338/)** I got Odon Valet Scholarship 2022.
+- **[10/2022](http://vanmieu.gov.vn/en/cac-hoat-ong/su-kien/338/)** I got Odon Valet Scholarship for the second time!
 
-- **[09/2022]()** I got best presentation award on my bachelor thesis defense 2022.
+- **[09/2022]()** I got best presentation award on my bachelor thesis defense 2022 (top 5% graduation).
 
-- **[05/2022]()** I got potential prize in scientific research award 2022.
+- **[05/2022]()** I got potential prize in scientific research award.
 
-- **[10/2021]()** I got excellent scholarships for the third times at HUST.
+- **[02/2022]()** One paper accepted at NICS.
+
+- **[10/2021]()** I got excellent scholarships for the third times at HUST!
+
+- **[10/2021]()** One paper accepted at MAPR.
 
 - **[01/2018]()** I got second prize (top 24) in Vietnamese National Physics Competition.
 
