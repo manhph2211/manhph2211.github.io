@@ -22,8 +22,6 @@ Manh is a Ph.D. candidate under the supervision of [Prof. Dong Ma](https://www.d
 <!-- ## <img src="./images/stats.gif" width="30px"> ***News*** -->
 ### 🔥 ***News***
 
-<!-- - **[06/2025]()** I am honored to be selected as Delegate of the 6th Global Vietnamese Young Scholars Forum. -->
-
 - **[05/2025]()** One paper accepted at ICML (3260/12107).
 
 - **[01/2025]()** One paper accepted at Nature Scientific Data.
