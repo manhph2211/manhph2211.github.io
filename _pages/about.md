@@ -22,6 +22,10 @@ Manh is a Ph.D. candidate under the supervision of [Prof. Dong Ma](https://www.d
 <!-- ## <img src="./images/stats.gif" width="30px"> ***News*** -->
 ### 🔥 ***News***
 
+- **[06/2025]()** Selected as Delegate of the 6th Global Vietnamese Young Scholars Forum.
+
+- **[06/2025]()** I am honored to deliver a talk at ASTT - Vietnam MOH on “AI for Cardiovascular Diagnosis”.
+
 - **[05/2025]()** One paper accepted at ICML (3260/12107).
 
 - **[01/2025]()** One paper accepted at Nature Scientific Data.
