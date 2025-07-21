@@ -22,6 +22,8 @@ Manh is a Ph.D. candidate under the supervision of [Prof. Dong Ma](https://www.d
 <!-- ## <img src="./images/stats.gif" width="30px"> ***News*** -->
 ### 🔥 ***News***
 
+- **[07/2025]()** One paper accepted at UbiComp/ISWC BodySys.
+
 - **[07/2025](https://drive.google.com/file/d/1k_6RQkJ49xXM-HN7lcnPVzAo8kBtd8PV/view?usp=sharing)** I got Presidential Doctoral Fellowship Award 2025!
 
 - **[07/2025]()** One paper accepted at ECAI (626/2667).
