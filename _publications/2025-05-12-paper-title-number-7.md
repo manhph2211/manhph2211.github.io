@@ -1,6 +1,6 @@
 ---
 title: "Q-HEART: ECG Question Answering via Knowledge-Informed Multimodal LLMs"
-permalink: /publication/2025-04-04-paper-title-number-7
+permalink: /publication/2025-05-12-paper-title-number-7
 excerpt: ''
 venue: ''
 date: 2025-05-12
