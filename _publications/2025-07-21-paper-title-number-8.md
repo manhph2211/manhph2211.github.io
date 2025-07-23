@@ -5,6 +5,6 @@ excerpt: ''
 venue: ''
 date: 2025-07-21
 paperurl: '' 
-citation: 'Changshuo Hu*, Manh Pham Hung*, Dong Ma. 11th Workshop on Body-Centric Computing Systems, Co-located with UbiComp / ISWC 2025'
+citation: 'Changshuo Hu*, Manh Pham Hung*, Dong Ma. 11th Workshop on Body-Centric Computing Systems, Co-located with UbiComp / ISWC 2025. '
 ---
 
